@@ -22,5 +22,10 @@ pipeline {
         load 'gates/crypto/RunGate.groovy'
       }
     }
+    stage('Source code - checks') {
+      steps {
+        load 'gates/sourcecodelocation/RunGate.groovy'
+      }
+    }
   }
 }
